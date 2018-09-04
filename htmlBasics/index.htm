@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en-US">                                   <!-- Declaring a language is important for accessibility applications (screen readers) and search engines
+                                                          The first two letters specify the language (en). If there is a dialect, use two more letters (US). -->
     <head>
         <title> HTML Basics </title>                  <!-- This will show as web browser tab name -->
     </head>
 
     <body>                                            <!-- Only body part is visible to browser -->
         <h1> This is my first heading. </h1>          <!-- Heading h1 - h6, h1=>most important h6=>least important -->
-        <p> What should i write? </p>                 <!-- paragraph tag -->
-                                                      <!-- below tag will create link reference, when you will click "Link to w3School" text page will redirect to linked website -->
+                                                      <!-- paragraph tag, style is an attribute used to change color of paragraph content -->
+        <p style="color:orange"> What should i write? </p>
+                                                      <!-- below tag will create link reference, when you will click "Link to w3School" text page will redirect to linked website. href is an attribute of <a> tag-->
         <a href = "https://www.goooooooogle.com"> Link to goooooogle </a>
+        <br/>                                          <!-- Line break, it doesn't have end tag -->
         <button> Click Me </button>                   <!-- Create button -->
-                                                      <!-- below tag will show image, scr to set image, alt (Alternative text). we can set width and height of image. -->
-        <img src = "./animal.JPG" alt = "Big AA" width="104" height = "142">This is a image. </img>
+                                                      <!-- below tag will show image, scr to set image, alt (Alternative text). we can set width and height of image. src,alt,height,width are the attribute of <img> tag-->
+        <br/>
+        <img src = "./animal.JPG" alt = "Not able to load image." width="104" height = "142">This is a image. alt attribute is used when image is not found</img>
+        <br/>
         <ul>                                          <!-- Unordered bullet list -->
             <li> Unordered </li>
             <li> bullet list </li>
         </ul>
+        <br/>
         <ol>                                          <!-- ordered bullet list -->
             <li> ordered </li>
             <li> bullet list </li>
         <ol>
+        <br/>
+        <p title = "Title is showing when we mouse over on paragraph"> paragraph to understand title attribute </p>
+        <h6 title = "Title for header"> bring move over me to see title </h6> 
     </body>
 
 </html>
